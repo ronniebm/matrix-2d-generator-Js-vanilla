@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Matrix Gen</title>
+</head>
+<body>
+
+  <section class="matrix">
+    <div class="matrix__container">
+
+      <div class="matrix__title">
+        <h1 class="matrix__title__h1">Matrix Generator</h1>
+      </div>
+
+      <div class="matrix__info">
+        <img class="matrix__img" src="./img/matrix.png" alt="matrix">
+        <div class="matrix__data">
+          <p class="matrix__data__title">Please introduce number of rows and colums:</p>
+          <div class="matrix__data__row">
+            <input class="matrix__data__input js-input-n-row" type="text" placeholder="N value..">
+            <input class="matrix__data__input js-input-m-col" type="text" placeholder="M value...">
+          </div>
+          <button class="matrix__data__button js-generate-button">Generate</button>
+        </div>
+      </div>
+
+      <div class="matrix__draw js-matrix-container">
+        
+        <!-- <div class="wrap">
+          <div class="wrap__row">
+            <input type="text" class="wrap__row__col">
+            <input type="text" class="wrap__row__col">
+          </div>
+          <span class="wrap__span">100</span>
+        </div>
+
+        <div class="wrap">
+          <div class="wrap__row">
+            <input type="text" class="wrap__row__col">
+            <input type="text" class="wrap__row__col">
+          </div>
+          <span class="wrap__span">100</span>
+        </div> -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <script type="module" rel="preload dns-prefetch" src="./script/script.js"></script>
+</body>
+</html>

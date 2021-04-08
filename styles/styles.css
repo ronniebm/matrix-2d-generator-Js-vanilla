@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.matrix {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 350px;
+}
+
+.matrix__container {
+  width: 1200px;
+}
+
+.matrix__title {
+  border-radius: 0px 0px 20px 20px;
+  background-color: #0e6279;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.matrix__title__h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.matrix__info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.matrix__img {
+  width: 300px;
+}
+
+.matrix__data {
+  padding: 30px;
+  border-radius: 4px;
+  margin-left: 50px;
+  background-color: #d3e0e9;
+  width: 34.5%;
+}
+
+.matrix__data__title {
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.matrix__data__input {
+  margin-left: 20px;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.matrix__data__button {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 370px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #063556;
+  color: white;
+  font-size: 20px;
+}
+
+.matrix__draw {
+  margin-top: 60px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px #72a5b3;
+  width: 94.9%;
+  height: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.wrap__row {
+  width: fit-content;
+  height: fit-content;
+}
+
+.wrap__row__col {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.wrap__row > :last-child {
+  margin-right: 0;
+}
+
+.wrap__span {
+  margin-left: 20px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: #cdf3f8;
+  border: 1px solid #0958a7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #0958a7;
+}
