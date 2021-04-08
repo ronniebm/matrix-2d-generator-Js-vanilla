@@ -8,7 +8,6 @@ generateButton.addEventListener('click', () => {
   const col = Number(document.querySelector('.js-input-m-col').value);
   matrixContainer.innerHTML = '';
   generateMatrixRow(row, col);
-  console.log(row);
 
 })
 
@@ -22,6 +21,9 @@ function generateMatrixRow(row, col) {
     matrixContainer.appendChild(wrapDiv);
   }
 
+  matrixContainer.appendChild(generateMatrixLastRow(col));
+  console.log(matrixContainer)
+
 }
 
 // ********************************************************************
@@ -29,22 +31,22 @@ function generateMatrixRow(row, col) {
 // ********************************************************************
 function generateMatrixCol(col) {
 
-  /* Create <DIV class="wrap"> item */
+  /* Create <div class="wrap"> item */
   const wrapDiv = document.createElement("div");
   wrapDiv.className = "wrap";
 
-  /* Create <DIV class="wrap__row"> item */
+  /* Create <div class="wrap__row"> item */
   const rowDiv = document.createElement("div");
   rowDiv.className = "wrap__row";
 
-  /* Create <DIV class="wrap__row"> item */
+  /* Create <div class="wrap__row"> item */
   const span = document.createElement("span");
   span.className = "wrap__span";
   span.innerText = "100";
 
   for (let i = 0; i < col; i++) {
 
-    /* Create input item */
+    /* Create <input type="text" class="wrap__row__col"> item */
     const input = document.createElement("input");
     input.className = "wrap__row__col";
     input.type = "text";
@@ -60,8 +62,26 @@ function generateMatrixCol(col) {
 }
 
 
+// ********************************************************************
+//                 function: Generate Matrix last Row.
+// ********************************************************************
+function generateMatrixLastRow(col) {
 
+  /* Create <div class="wrap"> item */
+  const wrapDiv = document.createElement("div");
+  wrapDiv.className = "wrap";
 
+  for (let i = 0; i < col; i++) {
 
+    /* Create <span class="last-span"> item */
+    const span = document.createElement("span");
+    span.className = "last-span";
+    span.innerText = "100";
 
-// 
+    wrapDiv.appendChild(span);
+  }
+
+  console.log(wrapDiv)
+  return wrapDiv;
+
+}

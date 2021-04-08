@@ -126,3 +126,20 @@
   font-weight: 900;
   color: #0958a7;
 }
+
+.last-span {
+  transform: translateX(-34.3px);
+  margin-right: 18px;
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: #cdf3f8;
+  border: 1px solid #0958a7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  color: #0958a7;
+}
